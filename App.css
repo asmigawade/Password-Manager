@@ -1,0 +1,232 @@
+/* Overall App Container */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Header Section */
+.App h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Divider */
+hr {
+  width: 80%;
+  border: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+/* Adding Password Section */
+.AddingPassword {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.AddingPassword input {
+  width: 100%;
+  max-width: 400px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.AddingPassword input::placeholder {
+  color: #aaa;
+}
+
+.AddingPassword .password-input-container {
+  position: relative;
+  width: 100%;
+}
+
+.AddingPassword .toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #007bff;
+}
+
+.AddingPassword button {
+  width: 100%;
+  max-width: 400px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #007bff;
+}
+
+.AddingPassword button:hover {
+  background-color: #0056b3;
+}
+
+.generate-button {
+  background-color: #28a745;
+}
+
+.generate-button:hover {
+  background-color: #218838;
+}
+
+/* Password Strength Meter */
+.password-strength {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px 0;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+.password-strength span {
+  display: block;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.password-strength.weak span {
+  background-color: #dc3545; /* Red for weak */
+}
+
+.password-strength.medium span {
+  background-color: #ffc107; /* Yellow for medium */
+}
+
+.password-strength.strong span {
+  background-color: #28a745; /* Green for strong */
+}
+
+/* Tags Section */
+.tags-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tag {
+  background-color: #e9ecef;
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.tag button {
+  background: none;
+  border: none;
+  color: #dc3545;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.tag button:hover {
+  color: #c82333;
+}
+
+/* Search Section */
+.Search {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.Search input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding-left: 40px; /* Add padding for the search icon */
+  font-size: 16px;
+}
+
+.Search .search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #007bff;
+}
+
+/* Password List Section */
+.Passwords {
+  width: 80%;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px; /* Adjust the gap between items as needed */
+  margin: 20px 0;
+}
+
+/* Individual Password Item */
+.password {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.password h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.buttons button {
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #007bff;
+}
+
+.buttons button:hover {
+  background-color: #0056b3;
+}
+
+.buttons button.delete-button {
+  background-color: #dc3545;
+}
+
+.buttons button.delete-button:hover {
+  background-color: #c82333;
+}
