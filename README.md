@@ -1,6 +1,4 @@
 
-
-```markdown
 # Personal Password Manager
 
 ## Overview
